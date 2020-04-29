@@ -2,8 +2,8 @@
 <h2 align="center">文件說明</h2>
 
 <p>本資料集為HTML課程之自學筆記，分為Lecture(範例程式碼)及Demo(網頁實作)兩部分。<br><br>
-＊Lecture主要記載自學練習之code，依據主題及關聯羅列七單元共25個範例，均附上備忘之註解筆記，末附速查索引表Appendix。<br>
-＊Demo為主題網頁實作，以<a href="http://www.soomal.com/doc/20100007586.htm">Soomal-2018年維也納新年音樂會曲目正式公布</a>網頁為範本，循序搭配各單元內容，逐步建構實作網頁之架構。</p>
+＊Lecture主要記載自學練習之code，依據主題及關聯羅列七單元共25個範例，均附上備忘之註解筆記，末附速查索引Appendix。<br>
+＊Demo為主題網頁實作，以<a href="http://www.soomal.com/doc/20100007586.htm">Soomal-2018年維也納新年音樂會曲目</a>網頁為範本，循序搭配各單元內容，逐步建構實作網頁之架構。</p>
 
 <pre>
 茲列章節綱要:
