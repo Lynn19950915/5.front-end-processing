@@ -1,28 +1,28 @@
 
-Lecture 08¡@¶i¶¥:µøÄ±¬ü¤Æ
+Lecture 08ã€€é€²éš: è¦–è¦ºç¾åŒ–
 
 --------------------------------------------------------------------------------
 
-8-1¡@¤TºØ¬ü¤Æµ¦²¤
+8-1ã€€ä¸‰ç¨®ç¾åŒ–ç­–ç•¥
 
 1.bootstrap: maxcdn(3.3.7)
 
-  maxcdn¬°³q¥Î¤§css¼Ë¦¡ªí¤u¨ã¡A©ú¦C¦UºØ³]­p¼ÒªO¡A¥H¦¹¬°¬ü¤Æ°ò©³
+  maxcdnç‚ºé€šç”¨ä¹‹cssæ¨£å¼è¡¨å·¥å…·ï¼Œæ˜åˆ—å„ç¨®è¨­è¨ˆæ¨¡æ¿ï¼Œä»¥æ­¤ç‚ºç¾åŒ–åŸºåº•
 
 2.google font CDN
 
-  google font´£¨Ñ¦U¦¡¦r«¬(font-family)¨Ñ·f°t¤U¸ü
+  google fontæä¾›å„å¼å­—å‹(font-family)ä¾›æ­é…ä¸‹è¼‰
 
-3.¦Û©w¸qcss
+3.è‡ªå®šç¾©css
 
-  ³z¹L¦Û©w¸qÀÉ¡Aµ²¦X«ü©w¦r«¬¡B°Ï¶ô©Î¬q¸¨½d³ò¡A°µ¬°µøÄ±¬ü¤Æ¤§©µ¦ù
+  é€éè‡ªå®šç¾©æª”ï¼ŒçµåˆæŒ‡å®šå­—å‹ã€å€å¡Šæˆ–æ®µè½ç¯„åœï¼Œåšç‚ºè¦–è¦ºç¾åŒ–ä¹‹å»¶ä¼¸
 
 
 --------------------------------------------------------------------------------
 
-8-2¡@template³]­p
+8-2ã€€templateè¨­è¨ˆ
 
-#¦Û¦æ³Ğ«ØÀÉ®×¡B¸ô®|
+#è‡ªè¡Œå‰µå»ºæª”æ¡ˆã€è·¯å¾‘
 (blog/static/css/blog.css)
 
 body{padding-left: 15px}
@@ -40,13 +40,13 @@ h2, h4{color: #FCA205; font-family: "Nuhito Sans"}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!--°ò©³: maxcdn¼Ë¦¡ªí¤u¨ã-->
+    <!--åŸºåº•: maxcdnæ¨£å¼è¡¨å·¥å…·-->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     
-    <!--¦r«¬: google font(¥i¦CÁ|¦h¦r«¬¡A¸Ô¸ü©ó¦Û­qcssÀÉ¤¤)-->
+    <!--å­—å‹: google font(å¯åˆ—èˆ‰å¤šå­—å‹ï¼Œè©³è¼‰æ–¼è‡ªè¨‚cssæª”ä¸­)-->
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
      
-    <!--¦Û©w¸qcssÀÉ-->
+    <!--è‡ªå®šç¾©cssæª”-->
     <link rel="stylesheet" href="/static/css/blog.css">
     <title>Lynn's Page</title>
 </head>
@@ -59,9 +59,9 @@ h2, h4{color: #FCA205; font-family: "Nuhito Sans"}
 
 --------------------------------------------------------------------------------
 
-8-3¡@staticÅÜ¶q
+8-3ã€€staticè®Šé‡
 
-#static¸ê®Æ§¨©óDjango¤¤¡A¦Û°Ê³Qµø¬°¸ô®|ÅÜ¼Æ(¥i½T«O²§°Ê¤£¼vÅT¸ô®|°İÃD)
+#staticè³‡æ–™å¤¾æ–¼Djangoä¸­ï¼Œè‡ªå‹•è¢«è¦–ç‚ºè·¯å¾‘è®Šæ•¸(å¯ç¢ºä¿ç•°å‹•ä¸å½±éŸ¿è·¯å¾‘å•é¡Œ)
 (blog/templates/blog/post_list.html)
 
 {% load staticfiles %}
@@ -71,13 +71,13 @@ h2, h4{color: #FCA205; font-family: "Nuhito Sans"}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!--°ò©³: maxcdn¼Ë¦¡ªí¤u¨ã-->
+    <!--åŸºåº•: maxcdnæ¨£å¼è¡¨å·¥å…·-->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     
-    <!--¦r«¬: google font(¥i¦CÁ|¦h¦r«¬¡A¸Ô¸ü©ó¦Û­qcssÀÉ¤¤)-->
+    <!--å­—å‹: google font(å¯åˆ—èˆ‰å¤šå­—å‹ï¼Œè©³è¼‰æ–¼è‡ªè¨‚cssæª”ä¸­)-->
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
      
-    <!--¦Û©w¸qcssÀÉ-->
+    <!--è‡ªå®šç¾©cssæª”-->
     <link rel="stylesheet" href="{% static "css/blog.css" %}">
     <title>Lynn's Page</title>
 </head>
@@ -88,7 +88,7 @@ h2, h4{color: #FCA205; font-family: "Nuhito Sans"}
 </html>
 
 
-#¦P¼Ë¦C©ópost_record.html
+#åŒæ¨£åˆ—æ–¼post_record.html
 (blog/templates/blog/post_record.html)
 
 {% load staticfiles %}
@@ -98,13 +98,13 @@ h2, h4{color: #FCA205; font-family: "Nuhito Sans"}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!--°ò©³: maxcdn¼Ë¦¡ªí¤u¨ã-->
+    <!--åŸºåº•: maxcdnæ¨£å¼è¡¨å·¥å…·-->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     
-    <!--¦r«¬: google font(¥i¦CÁ|¦h¦r«¬¡A¸Ô¸ü©ó¦Û­qcssÀÉ¤¤)-->
+    <!--å­—å‹: google font(å¯åˆ—èˆ‰å¤šå­—å‹ï¼Œè©³è¼‰æ–¼è‡ªè¨‚cssæª”ä¸­)-->
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
      
-    <!--¦Û©w¸qcssÀÉ-->
+    <!--è‡ªå®šç¾©cssæª”-->
     <link rel="stylesheet" href="{% static "css/blog.css" %}">
     <title>Lynn's Page</title>
 </head>
