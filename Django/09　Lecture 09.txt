@@ -1,9 +1,9 @@
 
-Lecture 09¡@¶i¶¥:¼ÒªOÄ~©Ó
+Lecture 09ã€€é€²éš: æ¨¡æ¿ç¹¼æ‰¿
 
 --------------------------------------------------------------------------------
 
-9-1¡@Ä~©Ó¼ÒªO
+9-1ã€€ç¹¼æ‰¿æ¨¡æ¿
 
 (blog/templates/blog/base.html)
 
@@ -22,19 +22,19 @@ Lecture 09¡@¶i¶¥:¼ÒªOÄ~©Ó
 
 <body>
     <div class="header"><h2>Lynn's Page</h2></div>
-    <!--¨ä¥L¼ÒªOªu¥Î®É¡A¦b³o¬q½d³ò¿é¤J³Ñ¤Uµ{¦¡§Y¥i-->
-¡@¡@{% block content %}{% endblock %}
+    <!--å…¶ä»–æ¨¡æ¿æ²¿ç”¨æ™‚ï¼Œåœ¨é€™æ®µç¯„åœè¼¸å…¥å‰©ä¸‹ç¨‹å¼å³å¯-->
+ã€€ã€€{% block content %}{% endblock %}
 </body>
 </html>
 
 
 --------------------------------------------------------------------------------
 
-9-2¡@ªu¥Î¼ÒªO
+9-2ã€€æ²¿ç”¨æ¨¡æ¿
 
 (blog/templates/blog/post_record.html)
 
-<!--«Å§i®M¥Îbase.html¼ÒªO-->
+<!--å®£å‘Šå¥—ç”¨base.htmlæ¨¡æ¿-->
 {% extends "blog/base.html" %}
 
 {% block content %}
@@ -45,7 +45,7 @@ Lecture 09¡@¶i¶¥:¼ÒªOÄ~©Ó
 <div class="content">
     <p>{{post.text}}</p>
     <p>{{post.created_date}} by {{post.author}}</p>
-    <a href='/blog'>¦^­º­¶</a>
+    <a href='/blog'>å›é¦–é </a>
 </div>
 
 {% endblock %}
@@ -53,7 +53,7 @@ Lecture 09¡@¶i¶¥:¼ÒªOÄ~©Ó
 
 (blog/templates/blog/post_list.html)
 
-<!--«Å§i®M¥Îbase.html¼ÒªO-->
+<!--å®£å‘Šå¥—ç”¨base.htmlæ¨¡æ¿-->
 {% extends "blog/base.html" %}
 
 {% block content %}
@@ -62,18 +62,18 @@ Lecture 09¡@¶i¶¥:¼ÒªOÄ~©Ó
     {% for post in posts%}
     <h2><a href="/blog{{post.id}}">{{post.title}}</a></h2>
     <p>{{post.text|linebreaks}}</p>
-    <p>µo¥¬®É¶¡:{{post.created_date}}</p>
+    <p>ç™¼å¸ƒæ™‚é–“:{{post.created_date}}</p>
     {% endfor %}
 </div>
 
 <div>
-    <h4>µo¥¬·s¤å³¹:</h4>
+    <h4>ç™¼å¸ƒæ–°æ–‡ç« :</h4>
     <form action="/blog/add_record" method="post" accept-charset="utf-8">
         {% csrf_token %}
         <table>
         {{post_form.as_table}}
         </table>
-    <input type="submit" name="add_record" value="´£¥æ">
+    <input type="submit" name="add_record" value="æäº¤">
     </form>
 </div>
 
