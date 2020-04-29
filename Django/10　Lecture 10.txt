@@ -1,39 +1,39 @@
 
-Lecture 10¡@¶i¶¥:½u¤W§G¸p
+Lecture 10ã€€é€²éš: ç·šä¸Šä½ˆç½²
 
 --------------------------------------------------------------------------------
 
-10-1¡@ngrok
+10-1ã€€ngrok
 
-1.©xºôµù¥U¡Bµn¤J
+1.å®˜ç¶²è¨»å†Šã€ç™»å…¥
 
-¡@https://ngrok.com µù¥U±b¸¹¨Ã§¹¦¨·í¤J
+ã€€https://ngrok.com è¨»å†Šå¸³è™Ÿä¸¦å®Œæˆç•¶å…¥
 
-2.¤U¸ü¨Ã¸ÑÀ£ÁYngrok.zipÀÉ
+2.ä¸‹è¼‰ä¸¦è§£å£“ç¸®ngrok.zipæª”
 
-¡@­º¦¸°õ¦æ»İ³sµ²±b¤á:¿é¤Jngrok authotoken+ª÷Æ_±K½X
+ã€€é¦–æ¬¡åŸ·è¡Œéœ€é€£çµå¸³æˆ¶:è¼¸å…¥ngrok authotoken+é‡‘é‘°å¯†ç¢¼
 
-3.±Nngrok.exeÀÉ©ñ¦Üproject¸ê®Æ§¨¤§¤U
+3.å°‡ngrok.exeæª”æ”¾è‡³projectè³‡æ–™å¤¾ä¹‹ä¸‹
 
-¡@myproject±N¦h¤@­Ó.exeÀÉ¡C[ª`·N]¤£¬O¨ä¤Uproject©Îblog¸ê®Æ§¨
+ã€€myprojectå°‡å¤šä¸€å€‹.exeæª”ã€‚[æ³¨æ„]ä¸æ˜¯å…¶ä¸‹projectæˆ–blogè³‡æ–™å¤¾
 
 
 --------------------------------------------------------------------------------
 
-10-2¡@HTTP tunnel
+10-2ã€€HTTP tunnel
 
 (ngrok.exe/terminal(2))
 
 ngrok(.exe) http 8000 
-(¥i¬d¬İsession status¡A½Æ»sForwarding¤§ºô§}³¡¤À)
+(å¯æŸ¥çœ‹session statusï¼Œè¤‡è£½Forwardingä¹‹ç¶²å€éƒ¨åˆ†)
 
 
 (project/settings.py)
 
 ...
 DEBUG=False
-#·s¼W¥H¤U¨â¦æ
-ALLOWED_HOSTS=["(½Æ»s¤§ºô§}³¡¤À)"]
+#æ–°å¢ä»¥ä¸‹å…©è¡Œ
+ALLOWED_HOSTS=["(è¤‡è£½ä¹‹ç¶²å€éƒ¨åˆ†)"]
 STATIC_ROOT=os.path.join(BASE_DIR, "static")
 ...
 
@@ -41,7 +41,7 @@ STATIC_ROOT=os.path.join(BASE_DIR, "static")
 (terminal)
 
 python manage.py collectstatic
-(­Y¥X²{xxx static files copied...¥Nªí¦¨¥\¦¬¶°¸ê·½)
+(è‹¥å‡ºç¾xxx static files copied...ä»£è¡¨æˆåŠŸæ”¶é›†è³‡æº)
 
 python manage.py runserver
-(¤w¦¨¥\§G¸p¦Ü½u¤W¡A´ú¸ÕForwardingºô§}¬O§_¥¿±`Åã¥Ü)
+(å·²æˆåŠŸä½ˆç½²è‡³ç·šä¸Šï¼Œæ¸¬è©¦Forwardingç¶²å€æ˜¯å¦æ­£å¸¸é¡¯ç¤º)
