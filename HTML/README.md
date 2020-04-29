@@ -19,4 +19,5 @@ Lecture 05　元素(1): 圖像、列表、表格
 Lecture 06　元素(2): 表單、鏈接
 Lecture 07　其他功能(文本格式化、腳本)
    Demo 04　網頁美化排版
+  Appendix　速查索引表
 </pre>
